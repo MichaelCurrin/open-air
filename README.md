@@ -1,21 +1,13 @@
 # Open Air
 > Report on South African air quality sensors using an open data project's API.
 
-Website for this project:
+## Project website
 
-- https://michaelcurrin.github.io/open-air/
+- [michaelcurrin.github.io/open-air](https://michaelcurrin.github.io/open-air/)
 
-## Sample
+### Sample screenshot
 
 ![Sample image](docs/preview.png)
-
-## How it works
-
-The single page site uses JS to fetch data from this JSON endpoint on the V2 API of `api.luftdaten.info`.
-
-- https://api.luftdaten.info/static/v2/data.json
-
-The response contains sensor measurements in the last 5 minutes. The data is filtered by location and shown in a table.
 
 ## Background
 
@@ -64,7 +56,7 @@ This project exists because I went to a workshop in South Africa where air quali
 
 ## Future development
 
-This project could be expanded to allow a user choice of country using a droplist. And the date range could be changed to be say 24 hours, at the costs of data fetching and processing time.
+This project could be expanded to allow a user choice of country using a droplist. And the date range could be changed to be say 24 hours.
 
 ## License
 
