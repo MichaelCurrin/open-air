@@ -5,23 +5,23 @@ Website for this project:
 
 - https://michaelcurrin.github.io/open-air/
 
-## What it does
+## Sample
 
 ![Sample image](docs/preview.png)
+
+## How it works
+
 The single page site uses JS to fetch data from this JSON endpoint on the V2 API of `api.luftdaten.info`.
 
 - https://api.luftdaten.info/static/v2/data.json
 
-The response contains sensor measurements in the last 5 minutes. The data is filtered on the client side to South Africa only and shown in a table.
+The response contains sensor measurements in the last 5 minutes. The data is filtered by location and shown in a table.
 
 ## Background
 
-This project exists because I went to a workshop in South Africa where air quality sensors were put together. These sensors contribute air quality measurement data to the [luftdaten.info](https://luftdaten.info) project. This data and those of other countries is made available through their APIs. This projects makes it easy to see the measurements of the South African (ZA) sensors by filtering by country on the client side.
-
-This project could be expanded to allow a user choice of country using a droplist. And the date range could be changed to be say 24 hours, at the costs of data fetching and processing time.
+This project exists because I went to a workshop in South Africa where air quality sensors were put together. These sensors contribute air quality measurement data to the [luftdaten.info](https://luftdaten.info) project. This data and those of other countries is made available through their APIs. This projects makes it easy to see the measurements of the South African (`ZA`) sensors.
 
 ## Links
-
 
 - [opendata-stuttgart/meta](https://github.com/opendata-stuttgart/meta) on Github.
 - [API documentation](https://github.com/opendata-stuttgart/meta/wiki/EN-APIs) on their Wiki.
@@ -61,3 +61,13 @@ This project could be expanded to allow a user choice of country using a droplis
 3. Go to Github Pages section.
 4. Enable website using `master` branch. The page will reload.
 5. Navigate to the section again and use the URL you see.
+
+## Future development
+
+This project could be expanded to allow a user choice of country using a droplist. And the date range could be changed to be say 24 hours, at the costs of data fetching and processing time.
+
+## License
+
+[MIT License](LICENSE)
+
+Feel free to fork this project and submit a PR with improvements. Or use this as a template for your own data project, with a link back this this repo.
