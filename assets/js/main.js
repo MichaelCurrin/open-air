@@ -1,6 +1,6 @@
 "use strict";
 
-const API_URL_5_MIN = '//api.luftdaten.info/static/v2/data.json';
+const API_ENDPOINT = '//api.luftdaten.info/static/v2/data.24h.json';
 
 function parseSensorData(value) {
     var output = {
@@ -35,11 +35,11 @@ function render(countryCode) {
     if (typeof countryCode === 'undefined') {
         throw new Error('Country code must be set');
     }
-    document.getElementById('location').innerHTML = countryCode;
+    document.getElementById('country').innerHTML = countryCode;
 
     document.getElementById('target-output').innerHTML = 'Loading...';
 
-    getData(API_URL_5_MIN, countryCode)
+    getData(API_ENDPOINT, countryCode)
         .then(data => {
             var content = {
                 "sensors": data
