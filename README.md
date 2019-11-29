@@ -1,9 +1,17 @@
 # Open Air
 > Report on South African air quality sensors using an open data project's API.
 
-See this project's website:
+Website for this project:
 
 - https://michaelcurrin.github.io/open-air/
+
+## What it does
+
+The single page site uses JS to fetch data from this JSON endpoint on the V2 API of `api.luftdaten.info`.
+
+- https://api.luftdaten.info/static/v2/data.json
+
+The response contains sensor measurements in the last 5 minutes. The data is filtered on the client side to South Africa only and shown in a table.
 
 ## Background
 
@@ -13,10 +21,11 @@ This project could be expanded to allow a user choice of country using a droplis
 
 ## Links
 
-- [opendata-stuttgart/meta](https://github.com/opendata-stuttgart/meta) repo.
-    * [API documentation](https://github.com/opendata-stuttgart/meta/wiki/EN-APIs) on the Wiki.
-    * [api.luftdaten.info/static/v2/data.json](https://api.luftdaten.info/static/v2/data.json) - V2 API endpoint for measurements in the last 5 minutes, used for this project.
-- [luftdaten.info](https://luftdaten.info) homepage. There is a link there to their map tool. Use this [link](https://deutschland.maps.luftdaten.info/#12/-33.9412/18.4803) to jump to the map with the view centered on Cape Town, South Africa.
+
+- [opendata-stuttgart/meta](https://github.com/opendata-stuttgart/meta) on Github.
+- [API documentation](https://github.com/opendata-stuttgart/meta/wiki/EN-APIs) on their Wiki.
+- [luftdaten.info](https://luftdaten.info) homepage - there is a link to their map tool.
+- [Map](https://deutschland.maps.luftdaten.info/#12/-33.9412/18.4803) with view centered on Cape Town, South Africa.
 
 
 ## Local development
