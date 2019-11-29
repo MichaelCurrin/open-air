@@ -7,6 +7,7 @@ Website for this project:
 
 ## What it does
 
+![Sample image](docs/preview.png)
 The single page site uses JS to fetch data from this JSON endpoint on the V2 API of `api.luftdaten.info`.
 
 - https://api.luftdaten.info/static/v2/data.json

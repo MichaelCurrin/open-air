@@ -1,4 +1,5 @@
 exclude:
+  - docs/
   - vendor/
   - LICENSE
   - README.md
