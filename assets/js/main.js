@@ -1,6 +1,6 @@
 "use strict";
 
-const API_ENDPOINT = '//api.luftdaten.info/static/v2/data.24h.json';
+const API_ENDPOINT = '//data.sensor.community/airrohr/v1/filter/country=ZA';
 
 function parseSensorData(value) {
     var output = {
@@ -32,6 +32,9 @@ function getData(url, countryCode) {
 }
 
 function render(countryCode) {
+    // While the /filter endpoint can be pre-filtered to one or more locations, additionally a
+    // country country can be applied here. This is also works on an endpoint which has no country
+    // filter.
     if (typeof countryCode === 'undefined') {
         throw new Error('Country code must be set');
     }
