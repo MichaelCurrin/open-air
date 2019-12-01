@@ -32,8 +32,11 @@ This project exists because I went to a workshop in South Africa where air quali
 
 ### Setup
 
-1. Clone the project from the original or a fork.
-2. Install [Jekyll](https://jekyllrb.com/) globally.
+1. Clone the project from the original or a fork. For example:
+    ```bash
+    $ git clone git@github.com:MichaelCurrin/open-air.git
+    ```
+3. Install [Jekyll](https://jekyllrb.com/) globally.
 
 ### Run
 
