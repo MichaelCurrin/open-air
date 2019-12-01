@@ -14,7 +14,7 @@ function parseSensorData(value) {
         manufacturer: value.sensor.sensor_type.manufacturer,
 
         location: value.location.country,
-        coord: `${value.location.latitude}, ${value.location.longitude}`,
+        coord: `${Number(value.location.latitude).toFixed(3)}, ${Number(value.location.longitude).toFixed(3)}`,
         altitude: value.location.altitude,
         indoor: value.location.indoor ? 'Yes' : 'No',
     }
