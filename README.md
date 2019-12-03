@@ -1,5 +1,5 @@
 # Open Air
-> Report on South African air quality sensors using an open data project's API.
+> Report on air quality sensors in Africa using APIS of open data projects.
 
 ## Project website
 
@@ -13,13 +13,7 @@
 
 This project exists because I went to a workshop in South Africa where air quality sensors were put together. These sensors contribute air quality measurement data to the [luftdaten.info](https://luftdaten.info) project. This data and those of other countries is made available through their APIs. This projects makes it easy to see the measurements of the South African (`ZA`) sensors.
 
-## Links
-
-- [opendata-stuttgart/meta](https://github.com/opendata-stuttgart/meta) on Github.
-- [API documentation](https://github.com/opendata-stuttgart/meta/wiki/EN-APIs) on their Wiki.
-- [luftdaten.info](https://luftdaten.info) homepage - there is a link to their map tool.
-- [Map](https://deutschland.maps.luftdaten.info/#12/-33.9412/18.4803) with view centered on Cape Town, South Africa.
-
+This was later expanded to include the Open Africa site's data too for several African countries.
 
 ## Local development
 
@@ -36,7 +30,7 @@ This project exists because I went to a workshop in South Africa where air quali
     ```bash
     $ git clone git@github.com:MichaelCurrin/open-air.git
     ```
-3. Install [Jekyll](https://jekyllrb.com/) globally.
+2. Install [Jekyll](https://jekyllrb.com/) globally.
 
 ### Run
 
