@@ -1,3 +1,10 @@
+title: "Open Air"
+
+baseurl: "/open-air"
+url: ""
+
+github_repo: "michaelcurrin/open-air"
+
 exclude:
   - docs/
   - vendor/
