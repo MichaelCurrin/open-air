@@ -1,6 +1,6 @@
 "use strict";
 
-function render_template(data) {
+function renderTemplate(data) {
     var content = {
         "sensors": data
     }
@@ -9,7 +9,7 @@ function render_template(data) {
     $('#target-output').html(html);
 }
 
-function render_luftdaten() {
+function renderLuftdaten() {
     var countryCodes = 'ZA';
     var url = `//data.sensor.community/airrohr/v1/filter/country=${countryCodes}`;
 
@@ -42,14 +42,14 @@ function render_luftdaten() {
 
         $.getJSON(url)
             .then(result => result.map(parseSensorData))
-            .then(data => render_template(data));
+            .then(data => renderTemplate(data));
     }
 
     render();
 }
 
 
-function render_openafrica() {
+function renderOpenAfrica() {
     var url = `//api.sensors.africa/static/v2/data.json`;
 
     function parseSensorData(value) {
@@ -86,7 +86,7 @@ function render_openafrica() {
 
         $.getJSON(url)
             .then(result => result.map(parseSensorData))
-            .then(data => render_template(data));
+            .then(data => renderTemplate(data));
     }
 
     render();

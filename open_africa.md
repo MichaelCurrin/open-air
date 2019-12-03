@@ -7,7 +7,7 @@ countries: KE, NG, TZ & UG
 ---
 <script>
     window.onload = function () {
-        render_openafrica();
+        renderOpenAfrica();
     };
 
 </script>
@@ -50,10 +50,10 @@ countries: KE, NG, TZ & UG
             <td>{{ coord }}</td>
             <td>{{ indoor }}</td>
 
-            <td>{{ P1 }}</td>
-            <td>{{ P2 }}</td>
-            <td>{{ humidity }} </td>
-            <td>{{ temperature }} </td>
+            <td><b>{{ P1 }}</b></td>
+            <td><b>{{ P2 }}</b></td>
+            <td><b>{{ humidity }}</b></td>
+            <td><b>{{ temperature }}</b></td>
 
             <td>{{ traffic_in_area }}</td>
             <td>{{ oven_in_area }}</td>

@@ -7,7 +7,7 @@ countries: ZA
 ---
 <script>
     window.onload = function () {
-        render_luftdaten();
+        renderLuftdaten();
     };
 
 </script>
@@ -42,10 +42,10 @@ countries: ZA
             <td>{{ altitude }}</td>
             <td>{{ indoor }}</td>
 
-            <td>{{ P1 }}</td>
-            <td>{{ P2 }}</td>
-            <td>{{ humidity }} </td>
-            <td>{{ temperature }} </td>
+            <td><b>{{ P1 }}</b></td>
+            <td><b>{{ P2 }}</b></td>
+            <td><b>{{ humidity }}</b></td>
+            <td><b>{{ temperature }}</b></td>
 
             <td>{{ sensor_type }}</td>
             <td>{{ manufacturer }}</td>
