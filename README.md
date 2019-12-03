@@ -40,7 +40,7 @@ This was later expanded to include the Open Africa site's data too for several A
     $ jekyll serve
     ```
 1. Open this URL in the browser.
-    - http://127.0.0.1:4000
+    - http://localhost:4000/open-air/
 
 
 ## Setup on Github Pages
