@@ -2,6 +2,10 @@
     padding: 1em;
 }
 
+h3 {
+    margin-top: 0.6em;
+}
+
 /* Github icon styling - from Docsify CSS. */
 
 .github-corner {
