@@ -26,6 +26,7 @@ function renderLuftdaten() {
 
             // country: value.location.country, // Not used for single country view.
             coord: `${Number(value.location.latitude).toFixed(3)}, ${Number(value.location.longitude).toFixed(3)}`,
+            altitude: value.location.altitude,
             indoor: value.location.indoor ? 'Yes' : 'No',
         }
 
