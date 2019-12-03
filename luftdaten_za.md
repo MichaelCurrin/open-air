@@ -22,42 +22,40 @@ Escape mustache template tags from liquid processing.
     <table class="table table-dark">
         <tr>
             <th>Sensor ID</th>
-            <th>Timestamp</th>
 
-            <th>Type</th>
-            <th>Pin</th>
-
-            <th>Manufacturer</th>
-            <th>Location</th>
             <th>Co-ord</th>
             <th>Altitude</th>
             <th>Indoor</th>
 
             <th>P1</th>
             <th>P2</th>
-
             <th>Humidity</th>
             <th>Temp</th>
+
+            <th>Type</th>
+            <th>Pin</th>
+            <th>Manufacturer</th>
+
+            <th>Timestamp</th>
         </tr>
         {{#sensors}}
         <tr>
             <td>{{ id }}</td>
-            <td>{{ timestamp }}</td>
 
-            <td>{{ sensor_type }}</td>
-            <td>{{ pin }}</td>
-
-            <td>{{ manufacturer }}</td>
-            <td>{{ location }}</td>
-            <td>{{ coord}}</td>
-            <td>{{ altitude}}</td>
-            <td>{{ indoor}}</td>
+            <td>{{ coord }}</td>
+            <td>{{ altitude }}</td>
+            <td>{{ indoor }}</td>
 
             <td>{{ P1 }}</td>
             <td>{{ P2 }}</td>
-
             <td>{{ humidity }} </td>
             <td>{{ temperature }} </td>
+
+            <td>{{ sensor_type }}</td>
+            <td>{{ pin }}</td>
+            <td>{{ manufacturer }}</td>
+
+            <td>{{ timestamp }}</td>
         </tr>
         {{/sensors}}
     </table>
