@@ -1,49 +1,34 @@
 ---
+layout: default
+title: South African sensor data
 ---
-<!DOCTYPE html>
-<html lang="en">
+<script>
+    window.onload = function () {
+        render('ZA');
+    };
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{{ site.title }}</title>
+</script>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <link rel="stylesheet" type="text/css" href="{{ 'assets/css/styles.css' | relative_url}}">
+<h3>Metadata</h3>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
+<ul>
+    <li>Data source: <code>data.sensor.community</code> (Luftdaten API)</li>
+    <li>Description: Average of measurements in the last 5 minutes</li>
+    <li>Country filter: <code id="country"></code></li>
+    <li>See the <a href="https://github.com/{{ site.github_repo }}">repo</a> docs for more info</li>
+</ul>
 
-    <script src="{{ 'assets/js/main.js' | relative_url }}"></script>
 
-</head>
+<h3>Report</h3>
 
-<body onload="render('ZA')">
-    {% include github_corner.html %}
-
-    <h1>Open Air</h1>
-    <h2>Measurements from air quality sensors</h2>
-    <h3>Metadata</h3>
-
-    <ul>
-        <li>Data source: <code>data.sensor.community</code></li>
-        <li>Description: Average of measurements in the last 5 minutes</li>
-        <li>Country filter: <code id="country"></code></li>
-        <li>See the <a href="https://github.com/{{ site.github_repo }}">repo</a> docs for more info</li>
-    </ul>
-
-    <h3>Report</h3>
-
-    {% comment %}
-    Escape mustache template tags from liquid processing.
-    {% endcomment %}
-    {% raw %}
-    <div id="target-output">Error fetching or processing data</div>
-    <script id="sensors-table" type="text/template">
-        <table class="table table-dark">
+{% comment %}
+Escape mustache template tags from liquid processing.
+{% endcomment %}
+{% raw %}
+<div id="target-output">Error fetching or processing data</div>
+<script id="sensors-table" type="text/template">
+    <table class="table table-dark">
                 <tr>
                     <th>Sensor ID</th>
                     <th>Timestamp</th>
@@ -86,7 +71,4 @@
                 {{/sensors}}
             </table>
     </script>
-    {% endraw %}
-</body>
-
-</html>
+{% endraw %}
