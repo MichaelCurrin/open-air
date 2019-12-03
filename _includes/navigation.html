@@ -8,11 +8,15 @@
         <ul class="navbar-nav">
             {% for item in site.data.navigation %}
             <li class="nav-item {% if item.link == page.url %}active{% endif %}">
-                <a class="nav-link" href="{{ item.link | relative_url }}">{{ item.name }} {% if item.link == page.url %} <span class="sr-only">(current)</span>{% endif %}</a>
+                <a class="nav-link" href="{{ item.link | relative_url }}">
+                    {{ item.name }} {% if item.link == page.url %} <span class="sr-only">(current)</span>{% endif %}
+                </a>
             </li>
             {% endfor %}
             <li class="nav-item">
-                    <a class="nav-link" href="https://github.com/{{ site.github_repo }}">Github <span class="fa fa-external-link"></span></a>
+                <a class="nav-link" href="https://github.com/{{ site.github_repo }}">
+                    Github <span class="fa fa-external-link"></span>
+                </a>
             </li>
         </ul>
     </div>
