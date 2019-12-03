@@ -14,10 +14,7 @@ function renderTemplate(data) {
     $('#target-output').html(html);
 }
 
-function renderLuftdaten() {
-    var countryCodes = 'ZA';
-    var url = `//data.sensor.community/airrohr/v1/filter/country=${countryCodes}`;
-
+function renderLuftdaten(url) {
     function parseSensorData(value) {
         var output = {
             id: `#${value.sensor.id}`,
@@ -56,9 +53,7 @@ function renderLuftdaten() {
 }
 
 
-function renderOpenAfrica() {
-    var url = `//api.sensors.africa/static/v2/data.json`;
-
+function renderOpenAfrica(url) {
     function parseSensorData(value) {
         // Skip altitude as it looks to be always null.
         var output = {
@@ -72,7 +67,7 @@ function renderOpenAfrica() {
             city: value.location.city,
             location: value.location.location,
             coord: `${Number(value.location.latitude).toFixed(3)}, ${Number(value.location.longitude).toFixed(3)}`,
-                altitude: value.location.altitude,
+            mapUrl: asMapUrl(value.location.latitude, value.location.longitude),
             indoor: value.location.indoor ? 'Yes' : 'No',
 
             traffic_in_area: value.location.traffic_in_area,

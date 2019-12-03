@@ -1,13 +1,15 @@
 ---
 layout: sensors
-title: "Open Africa"
-data_source: "api.sensors.africa/static/v2/data.json (Open Africa)."
-description: "Average of measurements in the last 5 minutes."
-countries: KE, NG, TZ & UG
+title: "Open Africa measurements"
+data:
+    label: Open Africa V2 API"
+    url: "api.sensors.africa/static/v2/data.json"
+    description: "Average of measurements in the last 5 minutes."
+    countries: KE, NG, TZ & UG
 ---
 <script>
     window.onload = function () {
-        renderOpenAfrica();
+        renderOpenAfrica('//{{ page.data._url }}');
     };
 
 </script>

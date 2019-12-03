@@ -1,13 +1,15 @@
 ---
 layout: sensors
-title: "Luftdaten - South Africa"
-data_source: "data.sensor.community (Luftdaten API)."
-description: "Average of measurements in the last 5 minutes."
-countries: ZA
+title: "Luftdaten measurements"
+data:
+    label: "Luftdaten V1 API with filter"
+    url: "data.sensor.community/airrohr/v1/filter/country=ZA"
+    description: "Average of measurements in the last 5 minutes."
+    countries: ZA
 ---
 <script>
     window.onload = function () {
-        renderLuftdaten();
+        renderLuftdaten('//{{ page.data.url }}');
     };
 
 </script>

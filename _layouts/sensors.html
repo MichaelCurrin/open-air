@@ -11,12 +11,12 @@ layout: default
 <p>While not as visual as a map (which already exists on the original project's site), the view is still a lot easier to
     scan quickly as a table rather than as the source JSON data.</p>
 
-<h3>Metadata</h3>
+<h3>Metadata for datasource</h3>
 
 <ul>
-    <li>Data source: <i>{{ page.data_source }}</i></li>
-    <li>Description: <i>{{ page.description }}</i></li>
-    <li>Filtered to countries: <i>{{ page.countries }}</i></li>
+    <li>Label: <a href="//{{ page.data.url }}">{{ page.data.label }}</a></li>
+    <li>Description: {{ page.data.description }}</li>
+    <li>Filtered to countries: {{ page.data.countries }}</li>
 </ul>
 
 <h3>Report</h3>
