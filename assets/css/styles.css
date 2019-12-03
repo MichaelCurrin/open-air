@@ -1,3 +1,7 @@
+.current {
+    color: green;
+}
+
 /* Github icon styling - from Docsify CSS. */
 
 .github-corner {

@@ -1,26 +1,17 @@
 ---
-layout: default
-title: Luftdaten sensor data - South Africa
+layout: sensors
+title: "Luftdaten - South Africa"
+data_source: "data.sensor.community (Luftdaten API)."
+description: "Average of measurements in the last 5 minutes."
+countries: ZA
 ---
 <script>
     window.onload = function () {
-        render('ZA');
+        render_luftdaten();
     };
 
 </script>
 
-
-<h3>Metadata</h3>
-
-<ul>
-    <li>Data source: <code>data.sensor.community</code> (Luftdaten API)</li>
-    <li>Description: Average of measurements in the last 5 minutes</li>
-    <li>Country filter: <code id="country"></code></li>
-    <li>See the <a href="https://github.com/{{ site.github_repo }}">repo</a> docs for more info</li>
-</ul>
-
-
-<h3>Report</h3>
 
 {% comment %}
 Escape mustache template tags from liquid processing.

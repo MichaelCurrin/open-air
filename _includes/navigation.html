@@ -1,0 +1,8 @@
+<nav>
+    {% for item in site.data.navigation %}
+        <a href="{{ item.link | relative_url }}" {% if item.link == page.url %}class="current"{% endif %}>
+            {{ item.name }}
+        </a>
+    {% endfor %}
+    <a href="https://github.com/{{ site.github_repo }}">Github <div class="fa fa-external-link"></div></a>
+</nav>

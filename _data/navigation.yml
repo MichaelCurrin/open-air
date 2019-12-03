@@ -1,0 +1,4 @@
+- name: Home
+  link: /
+- name: Luftdaten - ZA
+  link: /luftdaten_za.html
