@@ -1,5 +1,10 @@
 "use strict";
 
+function asMapUrl(lat, long) {
+    var zoomLevel = 12;
+    return `https://www.openstreetmap.org/#map=${zoomLevel}/${lat}/${long}`;
+}
+
 function renderTemplate(data) {
     var content = {
         "sensors": data
@@ -26,6 +31,7 @@ function renderLuftdaten() {
 
             // country: value.location.country, // Not used for single country view.
             coord: `${Number(value.location.latitude).toFixed(3)}, ${Number(value.location.longitude).toFixed(3)}`,
+            mapUrl: asMapUrl(value.location.latitude, value.location.longitude),
             altitude: value.location.altitude,
             indoor: value.location.indoor ? 'Yes' : 'No',
         }

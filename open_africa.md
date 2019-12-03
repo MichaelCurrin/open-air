@@ -45,7 +45,9 @@ countries: KE, NG, TZ & UG
             <td>{{ country }}</td>
             <td>{{ city }}</td>
             <td>{{ location }}</td>
-            <td>{{ coord }}</td>
+            <td>
+                {{ coord }} <a href="{{ mapUrl}}" target="_blank"><span class="fa fa-external-link"></span></a>
+            </td>
             <td>{{ indoor }}</td>
 
             <td><b>{{ P1 }}</b></td>

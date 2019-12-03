@@ -38,7 +38,9 @@ countries: ZA
         <tr>
             <td>{{ id }}</td>
 
-            <td>{{ coord }}</td>
+            <td>
+                {{ coord }} <a href="{{ mapUrl}}" target="_blank"><span class="fa fa-external-link"></span></a>
+            </td>
             <td>{{ altitude }}</td>
             <td>{{ indoor }}</td>
 
