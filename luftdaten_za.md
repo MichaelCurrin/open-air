@@ -13,9 +13,6 @@ countries: ZA
 </script>
 
 
-{% comment %}
-Escape mustache template tags from liquid processing.
-{% endcomment %}
 {% raw %}
 <div id="target-output">Error fetching or processing data</div>
 <script id="sensors-table" type="text/template">
@@ -27,13 +24,12 @@ Escape mustache template tags from liquid processing.
             <th>Altitude</th>
             <th>Indoor</th>
 
-            <th>P1</th>
-            <th>P2</th>
+            <th>PM1</th>
+            <th>PM2</th>
             <th>Humidity</th>
             <th>Temp</th>
 
             <th>Type</th>
-            <th>Pin</th>
             <th>Manufacturer</th>
 
             <th>Timestamp</th>
@@ -52,7 +48,6 @@ Escape mustache template tags from liquid processing.
             <td>{{ temperature }} </td>
 
             <td>{{ sensor_type }}</td>
-            <td>{{ pin }}</td>
             <td>{{ manufacturer }}</td>
 
             <td>{{ timestamp }}</td>
