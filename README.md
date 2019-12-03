@@ -58,6 +58,7 @@ This was later expanded to include the Open Africa site's data too for several A
 - Add sort to tables.
 - Add filter to tables. Such as by pin type or location or value range.
 - Freeze top row of table.
+- Fix navbar to the top of the screen.
 
 ## License
 
