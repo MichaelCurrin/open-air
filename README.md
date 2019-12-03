@@ -20,9 +20,9 @@ This was later expanded to include the Open Africa site's data too for several A
 ### Libraries
 
 - [Jekyll](https://jekyllrb.com/) - To build the static site. No Jekyll templating or themes are used though.
-- Bootstrap - To style the table (using [table classes](https://getbootstrap.com/docs/4.3/content/tables/)) and give the overall page a style.
-- JQuery - To handle remote JSON data.
-- Mustache JS - To create a table using template and data.
+- Bootstrap - To add styling to the tables (from [tutorial](https://getbootstrap.com/docs/4.3/content/tables/)), the navbar (from [tutorial](https://getbootstrap.com/docs/4.3/components/navbar/#toggler)) and to the page overall.
+- JQuery - To handle fetching JSON data.
+- Mustache JS - To create tables easily using a template and dynamic data.
 
 ### Setup
 
