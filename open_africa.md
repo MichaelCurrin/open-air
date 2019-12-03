@@ -9,7 +9,7 @@ data:
 ---
 <script>
     window.onload = function () {
-        renderOpenAfrica('//{{ page.data._url }}');
+        renderOpenAfrica('//{{ page.data.url }}');
     };
 
 </script>
