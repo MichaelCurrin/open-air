@@ -1,5 +1,5 @@
 # Open Air
-> Report on air quality sensors in Africa using APIS of open data projects.
+> Report on air quality sensors in Africa using APIs of open data projects.
 
 ## Project website
 
