@@ -22,7 +22,7 @@ This was later expanded to include the Open Africa site's data too for several A
 - [Jekyll](https://jekyllrb.com/) - To build the static site. No Jekyll templating or themes are used though.
 - Bootstrap - To add styling to the tables (from [tutorial](https://getbootstrap.com/docs/4.3/content/tables/)), the navbar (from [tutorial](https://getbootstrap.com/docs/4.3/components/navbar/#toggler)) and to the page overall.
 - JQuery - To handle fetching JSON data.
-- Mustache JS - To create tables easily using a template and dynamic data.
+- Mustache JS - To create tables easily using a template and dynamic data. These templates have to be escaped using the Jekyll `raw` tag.
 
 ### Setup
 
@@ -53,7 +53,11 @@ This was later expanded to include the Open Africa site's data too for several A
 
 ## Future development
 
-This project could be expanded to allow a user choice of country using a droplist. And the date range could be changed to be say 24 hours.
+- This project could be expanded to allow a user choice of country using a droplist for Luftdaten page.
+- Add count of rows at the top of a sensor page.
+- Add sort to tables.
+- Add filter to tables. Such as by pin type or location or value range.
+- Freeze top row of table.
 
 ## License
 
