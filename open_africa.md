@@ -19,7 +19,6 @@ countries: KE, NG, TZ & UG
     <table class="table table-dark">
         <tr>
             <th>Sensor ID</th>
-            <th>Node</th>
 
             <th>Country</th>
             <th>City</th>
@@ -42,7 +41,6 @@ countries: KE, NG, TZ & UG
         {{#sensors}}
         <tr>
             <td>{{ id }}</td>
-            <td>{{ node }}</td>
 
             <td>{{ country }}</td>
             <td>{{ city }}</td>

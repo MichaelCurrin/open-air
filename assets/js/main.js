@@ -57,7 +57,6 @@ function renderOpenAfrica() {
         // Skip altitude as it looks to be always null.
         var output = {
             id: `#${value.sensor.id}`,
-            node: value.sensor.node,
 
             sensor_type: value.sensor.sensor_type.name,
             manufacturer: value.sensor.sensor_type.manufacturer,
