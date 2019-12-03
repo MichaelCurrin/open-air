@@ -19,13 +19,18 @@
 </head>
 
 <body>
-  {% include navigation.html %}
+    <article>
+        <header>
+            {% include navigation.html %}
+            {% include github_corner.html %}
+        </header>
+    </article>
 
-  {% include github_corner.html %}
+    <div id="content">
+        <h2>{{ page.title }}</h2>
 
-  <h2>{{ page.title }}</h2>
-
-  {{ content }}
+        {{ content }}
+    </div>
 </body>
 
 </html>
